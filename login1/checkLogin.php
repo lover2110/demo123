@@ -1,8 +1,8 @@
 <?php
 include 'connectdtb.php';
-    $username = $_POST['name'];
+    $name = $_POST['name'];
 //if(isset($_POST['password'])){
-    $password = $_POST['pass'];
+    $pass = $_POST['pass'];
 //}
 $sql = "select * from tblacount where _name = '$username' and _pass= '$password'";
 $result = pg_result($dbconn, $sql);
