@@ -1,14 +1,12 @@
 <?php
 include 'connectdtb.php';
-if (isset($_POST['username'])){
-    $username = $_POST['username'];
-}
-if(isset($_POST['password'])){
-    $password = $_POST['password'];
-}
+    $username = $_POST['name'];
+//if(isset($_POST['password'])){
+    $password = $_POST['pass'];
+//}
 $sql = "select * from tblacount where _name = '$username' and _pass= '$password'";
 $result = pg_result($dbconn, $sql);
-if($result)
+if(pg_fetch_row($result))
 {
   echo "Welcome to admin services !!!";
   header('Location:../home.php');
