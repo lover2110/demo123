@@ -1,3 +1,3 @@
 <?php
-echo 'Đăng nhập được';
+echo 'Welcome to admin services ';
 
