@@ -5,8 +5,8 @@ include 'connectdtb.php';
     $password=$_POST['pass'];
 //}
 $sql = "select * from tblaccount where _name = '".$username."' and _pass= '".$password."'";
-$result = pg_result($dbconn, $sql);
-if(pg_fetch_row($result))
+$result = pg_query($dbconn, $sql);
+if($result)
 {
   echo "Welcome to admin services !!!";
   header('Location:../home.php');
