@@ -30,7 +30,7 @@
                         <img src="images/img-01.png" alt="IMG">
                     </div>
 
-                    <form action="checkLogin.php" class="login100-form validate-form">
+                    <form action="checkLogin.php" class="login100-form validate-form" method="post">
                         <span class="login100-form-title">
                             Member Login
                         </span>
